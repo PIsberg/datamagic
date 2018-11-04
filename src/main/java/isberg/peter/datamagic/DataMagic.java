@@ -39,8 +39,8 @@ public class DataMagic {
 		dataMagicResult.setOrginalData(data);
 		DataFormatType dataFormatType = dataFormatDetector.detect(subsetData);
 		dataMagicResult.setDataFormatType(dataFormatType);
-		
-		
+		String convertedData = dataFormatConverter.convert(data, dataFormatType);
+		dataMagicResult.setConvertedData(convertedData);
 
 		return dataMagicResult;
 	}

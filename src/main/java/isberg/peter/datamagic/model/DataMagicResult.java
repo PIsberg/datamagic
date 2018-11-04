@@ -5,7 +5,7 @@ import isberg.peter.datamagic.enums.DataFormatType;
 public class DataMagicResult {
 
 	private String orginalData;
-	private String cleartextData;
+	private String convertedData;
 	private DataFormatType dataFormatType;
 
 	public String getOrginalData() {
@@ -16,12 +16,12 @@ public class DataMagicResult {
 		this.orginalData = orginalData;
 	}
 
-	public String getCleartextData() {
-		return cleartextData;
+	public String getConvertedData() {
+		return convertedData;
 	}
 
-	public void setCleartextData(String cleartextData) {
-		this.cleartextData = cleartextData;
+	public void setConvertedData(String convertedData) {
+		this.convertedData = convertedData;
 	}
 
 	public DataFormatType getDataFormatType() {

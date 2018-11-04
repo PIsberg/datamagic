@@ -24,21 +24,24 @@ public class DataFormatDetector {
 			return DataFormatType.BASE64;
 		}
 
-		boolean isHexedecimal = isHexdecimal(data);
-		if (isHexedecimal) {
-			return DataFormatType.HEXADECIMAL;
-		}
 
-		boolean isASCII = charsetEncoder.canEncode(data);
-		if (isASCII) {
-			return DataFormatType.ASCII;
-		}
-		else if(!isASCII) {
+		//else if(!isASCII) {
 			// is binary?
 			return DataFormatType.BINARY;
-		}
+		//}
 		
-		return result;
+		// TODO: borked?
+//		boolean isHexedecimal = isHexdecimal(data);
+//		if (isHexedecimal) {
+//			return DataFormatType.HEXADECIMAL;
+//		}
+//		// TODO: borked?
+//		boolean isASCII = charsetEncoder.canEncode(data);
+//		if (isASCII) {
+//			return DataFormatType.ASCII;
+//		}
+		
+		
 	}
 
 	private boolean isHexdecimal(String data) {
