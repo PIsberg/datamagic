@@ -1,0 +1,6 @@
+isberg\peter\datamagic\DataFormatConverter.class
+isberg\peter\datamagic\DataMagic.class
+isberg\peter\datamagic\enums\DataFormatType.class
+isberg\peter\datamagic\model\DataMagicResult.class
+isberg\peter\datamagic\exceptions\EmptyInputData.class
+isberg\peter\datamagic\DataFormatDetector.class
